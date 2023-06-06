@@ -30,7 +30,7 @@ Once you've installed the extension, you should now be able to access it by incl
 
 ```
 format:
-  Fancy-doc-pdf: default
+  fancy-doc-pdf: default
 ```
 
 ## Example
