@@ -16,11 +16,39 @@
 A Quarto extension generate a PDF document using the `fancyhdr` `LaTeX` package.
 
 
-To use this template, run this command in your terminal:
+## Installation
+
+To use this template, go to the folder you want to work on your project in and then run the following command in your Terminal:
 
 ```
 quarto install extension DamonCharlesRoberts/fancy-doc
 ```
+
+## Using the extension
+
+Once you've installed the extension, you should now be able to access it by including the following in your Quarto file's (`.qmd`) yaml section.
+
+```
+format:
+  Fancy-doc-pdf: default
+```
+
+## Example
+If you want an example, you can download the [`example.qmd` file here in the Github Repository.](https://github.com/DamonCharlesRoberts/fancy-doc/blob/main/example.qmd)
+
+Then make sure to install the extension:
+
+```
+quarto install extension DamonCharlesRoberts/fancy-doc
+```
+
+Then you can render the document by running
+
+```
+quarto render example.qmd
+```
+
+It'll produce [`example.pdf` as seen here in the Github Repository.](https://github.com/DamonCharlesRoberts/fancy-doc/blob/main/example.pdf)
 
 ## Maintainers
 
