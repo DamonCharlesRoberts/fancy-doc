@@ -33,6 +33,7 @@ contributes:
       indent: true
       template-partials:
         - partials/before-body.tex
+        - partials/title.tex
       include-in-header:
         - include-in-header.tex
     html:
