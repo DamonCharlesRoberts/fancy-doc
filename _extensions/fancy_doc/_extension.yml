@@ -1,0 +1,39 @@
+title: Fancy_doc
+author: DamonCharlesRoberts
+version: 1.0.0
+quarto-required: ">=1.3.0"
+contributes:
+  formats:
+    common:
+      toc: true
+      filters:
+        - fancy_doc.lua
+      date-format: full
+    pdf:
+      documentclass: article
+      papersize: letter
+      fontsize: 12pt
+      geometry:
+        - top=1in
+        - bottom=1in
+        - left=1in
+        - right=1in
+      colorlinks: true
+      linkcolor: DarkSlateBlue
+      urlcolor: DarkSlateBlue
+      citecolor: DarkSlateBlue
+      link-citation: true
+      biblio-title: "References"
+      biblio-config: false
+      cite-method: biblatex
+      biblatex-chicago: false
+      biblio-style: apa
+      biblatexoptions:
+        - backend=biber
+      indent: true
+      template-partials:
+        - partials/before-body.tex
+      include-in-header:
+        - include-in-header.tex
+    html:
+      css: styles.css

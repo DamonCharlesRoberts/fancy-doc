@@ -1,0 +1,30 @@
+%-----------------------------------------------------------------------------%
+%                            SOME PREAMBLE STUFF                              %
+%-----------------------------------------------------------------------------%
+
+%-----------------------------------------------------------------------------%
+%                            LOAD PACKAGES                                    %
+%-----------------------------------------------------------------------------%
+
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage[style=apa, backend=biber]{biblatex}
+\usepackage[x11names]{xcolor}
+\usepackage{longtable}
+\usepackage{fancyhdr} % for header
+\usepackage{soul} % to make highlight for tags
+\usepackage{pdfpages} % to append pdf pages
+
+
+%-----------------------------------------------------------------------------%
+%                            Header                                           %
+%-----------------------------------------------------------------------------%
+
+\setlength{\headheight}{38pt}
+
+%-----------------------------------------------------------------------------%
+%                            Bibliography                                     %
+%-----------------------------------------------------------------------------%
+%accessing the bilbiography file specified in the qmd
+\addbibresource{$for(bibliography)$$bibliography$$endfor$}
