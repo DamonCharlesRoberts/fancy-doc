@@ -1,0 +1,22 @@
+%-----------------------------------------------------------------------------%
+%                            BIBLATEX                                         %
+%-----------------------------------------------------------------------------%
+
+$if(biblatex)$
+$if(biblatex-chicago)$
+\usepackage[$if(biblio-style)$$biblio-style$,$endif$$for(biblatexoptions)$$biblatexoptions$$sep$,$endfor$]{biblatex-chicago}
+$else$
+\usepackage[$if(biblio-style)$style=$biblio-style$,$endif$$for(biblatexoptions)$$biblatexoptions$$sep$,$endfor$]{biblatex}
+$endif$
+
+\setlength\bibitemsep{0pt}  % No space between bib entries
+\renewcommand*{\bibfont}{\footnotesize}  % Use smaller font
+\setlength\bibhang{\parindent}  % Match document indentation
+
+% Fix biblatex's odd preference for using In: by default.
+\renewbibmacro{in:}{%
+  \ifentrytype{article}{}{%
+  \printtext{\bibstring{}\intitlepunct}}}
+
+\addbibresource{$bibliography$}
+$endif$
