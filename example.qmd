@@ -1,20 +1,16 @@
 ---
-title: Fancy_doc Template
+title: fancy-doc
 subtitle: A Quarto Extension
 format:
-  fancy_doc-pdf:
-    latex-output-dir: "./examples/"  
-  fancy_doc-html:
-    output-dir: "./examples/"
+  fancy-doc-pdf: default 
 author:
-  - name: Damon Roberts
+  - name: Damon C. Roberts
     affiliations:
       - name: Univeristy of Colorado Boulder
     email: damon.roberts-1@colorado.edu
-    url: https://example.org/
 bibliography: bibliography.bib  
 ---
 
 ## Introduction {#sec-intro}
 
-This is a Quarto template that you can use to generate a doc that looks like the one contained in `./examples/example.pdf`
+This is a Quarto template that you can use to generate a doc that looks like the one contained in `./examples.pdf`.
