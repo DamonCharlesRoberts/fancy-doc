@@ -13,7 +13,7 @@
 
 ---
 
-A Quarto extension generate a PDF document using the `fancyhdr` `LaTeX` package.
+A Quarto extension to generate a PDF document using the `fancyhdr` `LaTeX` package.
 
 
 ## Installation
